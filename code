@@ -1,0 +1,13 @@
+# marke sure installed pandas-datareader 
+
+from pandas_datareader import data, wb 
+import pandas as pd
+import numpy as np
+import datetime
+import seaborn as sns
+%matplotlib inline 
+
+start = datetime.datetime(2000,1,1)
+end = datetime.datetime(2018,1,1)
+
+BOA = data.DataReader('BOA','')
